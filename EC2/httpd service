@@ -1,0 +1,8 @@
+sudo su
+
+yum update -y
+yum install -y httpd
+
+systemctl enable httpd.service
+systemctl start httpd.service
+systemctl status httpd
