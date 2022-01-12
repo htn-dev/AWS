@@ -1,3 +1,5 @@
+# INSTALL AND START HTTPD SERVICE
+
 sudo su
 
 yum update -y
