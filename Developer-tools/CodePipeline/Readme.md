@@ -1,4 +1,4 @@
-In this lab, we will create a Continuous Integration/Continuous Delivery pipeline using
+Create a Continuous Integration/Continuous Delivery pipeline using
 AWS, and then use that pipeline to deploy a new version of our website automatically.
 We'll implement this with AWS CodeStar, a frontend tool that will automatically
 configure AWS CodeCommit, AWS CodeBuild, AWS CodeDeploy, and AWS CodePipeline.
