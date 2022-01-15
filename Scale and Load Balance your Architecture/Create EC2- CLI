@@ -1,4 +1,4 @@
-# Creating UserData.txt file
+# CREATING UserData.txt FILE
 
 #!/bin/bash
 yum update -y --security
