@@ -8,7 +8,12 @@ sudo yum install -y java-1.8.0-openjdk-devel
 # repository that provides 'daemonize'
 sudo amazon-linux-extras install epel -y
 
+# Import public key for jenkins
+sudo rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key
+
 sudo yum install jenkins -y
 sudo systemctl enable jenkins
 sudo systemctl start jenkins
-sudo systemctl status jenkins #ensure jenkins is up and running
+
+# nsure jenkins is up and running
+sudo systemctl status jenkins
