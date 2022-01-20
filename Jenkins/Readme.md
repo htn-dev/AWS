@@ -14,3 +14,6 @@ High level overview of steps involved
 - Jenkins
 - Git
 - Maven
+
+Integrate Jenkins with AWS and ran a jenkins job on a worker node:
+https://medium.com/@SylvesterYiadom/integrate-jenkins-with-aws-part-i-e51f141b7ec2
