@@ -5,4 +5,5 @@ aws ec2 describe-instances --filter "Name=tag:Project,Values=ERPSystem"
 # Use the --query parameter to limit the output of the previous command to only the instance ID of the discovered instance:
 aws ec2 describe-instances --filter "Name=tag:Project,Values=ERPSystem" --query 'Reservations[*].Instances[*].InstanceId'
 
-
+#  Include both the instance ID and the Availability Zone of each instance in your return result
+aws ec2 describe-instances --filter "Name=tag:Project,Values=ERPSystem" --query 'Reservations[*].Instances[*].{ID:InstanceId,AZ:Placement.AvailabilityZone}'
