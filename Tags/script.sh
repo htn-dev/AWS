@@ -7,3 +7,6 @@ aws ec2 describe-instances --filter "Name=tag:Project,Values=ERPSystem" --query 
 
 #  Include both the instance ID and the Availability Zone of each instance in your return result
 aws ec2 describe-instances --filter "Name=tag:Project,Values=ERPSystem" --query 'Reservations[*].Instances[*].{ID:InstanceId,AZ:Placement.AvailabilityZone}'
+
+# Include the value of the Project tag in your output
+aws ec2 describe-instances --filter "Name=tag:Project,Values=ERPSystem" --query 'Reservations[*].Instances[*].{ID:InstanceId,AZ:Placement.AvailabilityZone,Project:Tags[?Key==`Project`] | [0].Value}'
