@@ -22,3 +22,9 @@ aws ec2 describe-instances --filter "Name=tag:Project,Values=ERPSystem" "Name=ta
 
 # Verify that the version number on these instances has been incremented and that other non-development boxes in the ERPSystem project have been unaffected
 aws ec2 describe-instances --filter "Name=tag:Project,Values=ERPSystem" --query 'Reservations[*].Instances[*].{ID:InstanceId, AZ:Placement.AvailabilityZone, Project:Tags[?Key==`Project`] |[0].Value,Environment:Tags[?Key==`Environment`] | [0].Value,Version:Tags[?Key==`Version`] | [0].Value}'
+
+# Run the stopinator.php script
+# Two instances will be stopped in your current AWS region
+cd aws-tools
+./stopinator.php -t"Project=ERPSystem;Environment=development"
+
