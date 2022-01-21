@@ -28,3 +28,5 @@ aws ec2 describe-instances --filter "Name=tag:Project,Values=ERPSystem" --query 
 cd aws-tools
 ./stopinator.php -t"Project=ERPSystem;Environment=development"
 
+# Restart the instances
+./stopinator.php -t"Project=ERPSystem;Environment=development" -s
