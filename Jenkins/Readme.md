@@ -1,3 +1,7 @@
+# **Jenkins** is an open source automation server which enables developers, cloud engineers, devops practitioners 
+around the world to reliably build, test, and deploy their software.
+
+
 # Integrate Jenkins with AWS
 This is a step by step project on how to integrate Jenkins with AWS.
 
