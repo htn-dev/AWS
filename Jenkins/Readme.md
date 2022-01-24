@@ -1,4 +1,4 @@
-Jenkins is an open source automation server which enables developers, cloud engineers, devops practitioners 
+**Jenkins** is an open source automation server which enables developers, cloud engineers, devops practitioners 
 around the world to reliably build, test, and deploy their software.
 
 
