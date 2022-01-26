@@ -1,3 +1,6 @@
+# Check mariaDB version
+sudo  amazon-linux-extras | grep mariadb
+
 '''     
     DB instance identifier: CafeDBInstance
     Engine option: MariaDB
@@ -33,3 +36,14 @@ aws rds create-db-instance \
 --no-publicly-accessible \
 
 --master-username root --master-user-password 'Re:Start!9'
+
+
+''' Monitor the status of the database instance. This command displays the status of the database instance as the last returned value.  It also shows: 
+
+    Endpoint address
+    Availability Zone
+    Preferred backup window
+    Backup retention period
+'''
+
+aws rds describe-db-instances --db-instance-identifier CafeDBInstance --query "DBInstances[*].[Endpoint.Address,AvailabilityZone,PreferredBackupWindow,BackupRetentionPeriod,DBInstanceStatus]"
