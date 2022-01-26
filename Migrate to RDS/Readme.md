@@ -14,4 +14,6 @@ The administration of database can be a burden. Doing weekly database backups re
 
 In addition, Installing a required patch can be struggling and waste more time.
 
+Business' labor costs can be increased because they must pay for the overtime hours.
+
 Migrating to Amazon RDS eliminates the burden of manually performing common database maintenance tasks, such as backups, patch installation, and upgrades. As a fully managed service, Amazon RDS performs these tasks automatically.
