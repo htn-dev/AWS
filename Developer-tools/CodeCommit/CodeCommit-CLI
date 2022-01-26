@@ -11,7 +11,6 @@ sudo yum update -y
 sudo yum install git -y
 
 # new user > Security Credentials > GenerateunderHTTPS Git credentials for AWS CodeCommit > Download credentials
-
 aws configure
 
 # create a CodeCommit repository
