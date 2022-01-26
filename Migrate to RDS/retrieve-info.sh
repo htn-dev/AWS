@@ -6,3 +6,10 @@ aws ec2 describe-instances --filters "Name=tag:Name,Values= CafeInstance" --quer
 
 # Determine the IPv4 CIDR block of the Cafe VPC
 aws ec2 describe-vpcs --vpc-ids <CafeInstance VPC ID> --filters "Name=tag:Name,Values= Cafe VPC" --query "Vpcs[*].CidrBlock"
+
+# Determine the Subnet ID and IPv4 CIDR block of Cafe Public Subnet 1, which is the only subnet in the VPC
+aws ec2 describe-subnets --filters "Name=vpc-id,Values=<CafeInstance VPC ID>" --query "Subnets[*].[SubnetId,CidrBlock]"
+
+# Determine the list of Availability Zones in the Region. In the command below, substitute <region> with the actual region name
+aws ec2 describe-availability-zones --filters "Name=region-name,Values=<region>" --query "AvailabilityZones[*].ZoneName"
+
