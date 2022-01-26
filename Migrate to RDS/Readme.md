@@ -19,7 +19,9 @@ Business' labor costs can be increased because they must pay for the overtime ho
 Migrating to Amazon RDS eliminates the burden of manually performing common database maintenance tasks, such as backups, patch installation, and upgrades. As a fully managed service, Amazon RDS performs these tasks automatically.
 
 
-**The information that you should collecte for the current environment:******
+
+
+**The information that you should collecte for the current environment:**
 
     CafeInstance Instance ID: i.nnnnnnnnnn
     CafeInstance Instance Type: t3.small
