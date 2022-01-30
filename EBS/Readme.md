@@ -14,4 +14,4 @@ Create an Amazon EBS volume, attach it to an instance, apply a file system to th
    _ Create a new volume from your snapshot
    
    _ Attach and mount the new volume to your EC2 instance
-    
+    _
