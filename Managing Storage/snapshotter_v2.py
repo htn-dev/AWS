@@ -11,6 +11,7 @@ ec2 = boto3.resource('ec2')
 volume_iterator = ec2.volumes.all()
 
 # Create a snapshot of each volume
+
 for v in volume_iterator:
   v.create_snapshot()
 
