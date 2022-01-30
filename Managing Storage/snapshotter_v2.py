@@ -18,7 +18,7 @@ for v in volume_iterator:
   snapshots = list(v.snapshots.all())
   if len(snapshots) > MAX_SNAPSHOTS:
 
-    # Delete oldest snapshots, but keep MAX_SNAPSHOTS available
+    # Delete the oldest snapshots, but keep MAX_SNAPSHOTS available
     snap_sorted = sorted([(s.id, s.start_time, s) for s in snapshots], key=lambd
 a k: k[1])
     for s in snap_sorted[:-MAX_SNAPSHOTS]:
