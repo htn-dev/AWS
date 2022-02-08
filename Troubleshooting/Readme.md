@@ -1,3 +1,5 @@
+**Build a troubleshooting knowledge base:**
+
 Processes and techniques to successfully troubleshoot technical issues
 
 • Describe common technical challenges users face when they attempt to deploy, upgrade, and 
