@@ -5,3 +5,5 @@ maintain AWS Cloud deployments
 
 • Explain how to overcome specific technical challenges by confirming and adjusting 
 deployment configurations as necessary
+
+• Present troubleshooting techniques to stakeholders 
