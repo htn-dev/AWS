@@ -1,4 +1,4 @@
-**Build a troubleshooting knowledge base:**
+**Build a troubleshooting knowledge base:** 
 
 Processes and techniques to successfully troubleshoot technical issues
 
