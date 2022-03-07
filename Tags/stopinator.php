@@ -1,5 +1,6 @@
 #!/usr/bin/php
 <?php
+
 # A simple PHP script to start all Amazon EC2 instances and Amazon RDS
 # databases within all regions.
 #
