@@ -11,7 +11,6 @@ sudo amazon-linux-extras install epel -y
 # Import public key for jenkins
 sudo rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key
 sudo yum install jenkins -y
-
 sudo systemctl enable jenkins
 sudo systemctl start jenkins
 
