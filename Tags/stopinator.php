@@ -20,6 +20,7 @@
 # If not supplied, will use the default profile.
 #
 # -s start: If present, starts instead of stops instances.
+
 # PREREQUISITES
 # This app assumes that you have defined an .aws/credentials file.
 
