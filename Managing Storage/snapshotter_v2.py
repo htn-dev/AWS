@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
 import boto3
-
 MAX_SNAPSHOTS = 2   # Number of snapshots to keep
 
 # Create the EC2 resource
