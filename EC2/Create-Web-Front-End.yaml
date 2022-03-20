@@ -3,6 +3,7 @@
 # provide a JSON config file with you app config parameters, 
 # and start the services on the instance.
 
+
 #!/bin/bash -ex
 export HOME=/home/ec2-user
 export LANG=en_US.UTF-8
