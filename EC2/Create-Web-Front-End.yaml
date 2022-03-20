@@ -1,7 +1,7 @@
 ## This script will be used on the instance to install packages, 
 # install the web application, 
 # provide a JSON config file with you app config parameters, 
- and start the services on the instance.
+# and start the services on the instance.
 ##
 
 #!/bin/bash -ex
