@@ -12,3 +12,8 @@ sudo usermod -a -G www ec2-user
 
 # Change the group ownership of the /var/www directory and its contents to the www group.
 sudo chgrp -R www /var/www
+
+# Change the directory permissions of /var/www and its subdirectories to add group write permissions and set the group ID on subdirectories created in the future.
+sudo chmod 2775 /var/www
+find /var/www -type d -exec sudo chmod 2775 {} +
+
