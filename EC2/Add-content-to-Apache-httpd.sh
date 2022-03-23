@@ -4,3 +4,6 @@
 # To set file permissions for the Apache web server, add the www group to your EC2 instance
 sudo groupadd www
 
+# Add the ec2-user user to the www group
+sudo usermod -a -G www ec2-user
+
