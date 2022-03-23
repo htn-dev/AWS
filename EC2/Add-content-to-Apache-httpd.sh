@@ -19,3 +19,7 @@ find /var/www -type d -exec sudo chmod 2775 {} +
 
 # Recursively change the permissions for files in the /var/www directory and its subdirectories to add group write permissions.
 find /var/www -type f -exec sudo chmod 0664 {} +
+
+# Change your directory to /var/www/html
+cd /var/www/html
+
