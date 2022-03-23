@@ -23,3 +23,16 @@ find /var/www -type f -exec sudo chmod 0664 {} +
 # Change your directory to /var/www/html
 cd /var/www/html
 
+# You can add any html file you want. For example, you can use this simple html file:
+nano index.html
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello World!</title>
+    </head>
+    <body>
+        <p>Hello World!</p>
+    </body>
+</html>
+
