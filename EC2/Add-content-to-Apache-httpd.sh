@@ -10,3 +10,5 @@ sudo usermod -a -G www ec2-user
 #Log out by issuing the exit command to refresh your permissions and include the new www group.
 #Log back in again and verify that the www group exists with the groups command
 
+# Change the group ownership of the /var/www directory and its contents to the www group.
+sudo chgrp -R www /var/www
