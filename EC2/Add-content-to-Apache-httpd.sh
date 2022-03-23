@@ -36,3 +36,4 @@ nano index.html
     </body>
 </html>
 
+# Save your file and use lynx to browse to the page with lynx http://localhost
