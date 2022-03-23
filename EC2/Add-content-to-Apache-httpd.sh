@@ -7,3 +7,6 @@ sudo groupadd www
 # Add the ec2-user user to the www group
 sudo usermod -a -G www ec2-user
 
+#Log out by issuing the exit command to refresh your permissions and include the new www group.
+#Log back in again and verify that the www group exists with the groups command
+
