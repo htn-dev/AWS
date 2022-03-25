@@ -14,3 +14,5 @@ sudo cp /etc/fstab /etc/fstab.orig
 
 # Next, find the device’s 128-bit universally unique identifier (UUID). This UUID, unlike the devices’ names, is unique and does not change
 sudo blkid
+
+# Save the UUID of /dev/xvdf. We will use it later
