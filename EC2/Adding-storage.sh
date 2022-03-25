@@ -18,3 +18,6 @@ sudo blkid
 # Save the UUID of /dev/xvdf. We will use it later
 # Now that we know the UUID, let’s add it to the /etc/fstab file
 sudo nano /etc/fstab
+
+# Add the following line to the file, using the UUID you saved previously:
+UUID=aebf131c-6957-451e-8d34-ec978d9581ae  /data  xfs  defaults,nofail  0  2
