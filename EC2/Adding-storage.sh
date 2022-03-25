@@ -17,4 +17,4 @@ sudo blkid
 
 # Save the UUID of /dev/xvdf. We will use it later
 # Now that we know the UUID, let’s add it to the /etc/fstab file
-
+sudo nano /etc/fstab
