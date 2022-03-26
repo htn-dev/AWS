@@ -5,6 +5,7 @@ sudo yum update -y
 # Create user from IAM
 # Add AWSCodeCommitFullAccess policy to the new user
 # Download .csv file
+
 # Install Git
 sudo yum install git -y
 
