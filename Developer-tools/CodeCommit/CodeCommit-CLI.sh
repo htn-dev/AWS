@@ -15,7 +15,7 @@ aws configure
 # create a CodeCommit repository
 aws codecommit create-repository --repository-name RepoFromCLI --repository-description "My demonstration repository"
 
-# clone the repositoryto the server
+# Clone the repositoryto the server
 
 # Clone URL > Clone HTTPS
 git clone [paste the URL from the clipboard]
