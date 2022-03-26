@@ -1,5 +1,4 @@
 # Create a Server from an Amazon Linux 2 AMI
-
 sudo yum update -y
 
 # Create IAM CodeCommit Credentials
