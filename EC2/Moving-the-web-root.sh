@@ -38,4 +38,6 @@ sudo nano /etc/httpd/conf/httpd.conf
       # Further relax access to the default document root:
       <Directory "/data/html">
       
-      
+
+# Save the file. Now, let’s test that the Apache server is actually configured to use the new location for its document root directory.
+# Remove the index.html file you created before:
