@@ -23,3 +23,19 @@ sudo nano /etc/httpd/conf/httpd.conf
       # Further relax access to the default document root:
       <Directory "/var/www/html">
 
+# Modify DocumentRoot and Directory “/var/www/html” to use the new location:
+      DocumentRoot "/data/html"
+
+      #
+      # Relax access to content within /var/www.
+      #
+      <Directory "/var/www">
+          AllowOverride None
+          # Allow open access:
+          Require all granted
+      </Directory>
+
+      # Further relax access to the default document root:
+      <Directory "/data/html">
+      
+      
