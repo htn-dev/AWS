@@ -8,3 +8,18 @@ sudo rsync -av /var/www/html /data
 # Open and edit the configuration file:
 sudo nano /etc/httpd/conf/httpd.conf 
 
+# In the document, find this section:
+      DocumentRoot "/var/www/html"
+
+      #
+      # Relax access to content within /var/www.
+      #
+      <Directory "/var/www">
+          AllowOverride None
+          # Allow open access:
+          Require all granted
+      </Directory>
+
+      # Further relax access to the default document root:
+      <Directory "/var/www/html">
+
