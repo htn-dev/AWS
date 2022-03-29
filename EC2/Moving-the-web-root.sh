@@ -46,3 +46,5 @@ sudo rm /var/www/html/index.html
 # Refresh your web browser. Your web site will not show your custom index.html homepage. We need to restart the Apache server in order to use apply the new configuration.
 # Restart the Apache server:
 sudo systemctl restart httpd
+
+# Refresh again your browser. Your web site will be up and running. The Apache server uses the new location for its document root directory.
