@@ -42,3 +42,6 @@ sudo nano /etc/httpd/conf/httpd.conf
 # Save the file. Now, let’s test that the Apache server is actually configured to use the new location for its document root directory.
 # Remove the index.html file you created before:
 sudo rm /var/www/html/index.html
+
+# Refresh your web browser. Your web site will not show your custom index.html homepage. We need to restart the Apache server in order to use apply the new configuration.
+# Restart the Apache server:
