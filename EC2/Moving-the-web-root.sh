@@ -24,7 +24,7 @@ sudo nano /etc/httpd/conf/httpd.conf
       <Directory "/var/www/html">
 
 # Modify DocumentRoot and Directory “/var/www/html” to use the new location:
-      DocumentRoot "/data/html"
+      DocumentRoot "/data"
 
       #
       # Relax access to content within /var/www.
@@ -36,7 +36,7 @@ sudo nano /etc/httpd/conf/httpd.conf
       </Directory>
 
       # Further relax access to the default document root:
-      <Directory "/data/html">
+      <Directory "/data">
       
 
 # Save the file. Now, let’s test that the Apache server is actually configured to use the new location for its document root directory.
@@ -45,3 +45,4 @@ sudo rm /var/www/html/index.html
 
 # Refresh your web browser. Your web site will not show your custom index.html homepage. We need to restart the Apache server in order to use apply the new configuration.
 # Restart the Apache server:
+sudo systemctl restart httpd
