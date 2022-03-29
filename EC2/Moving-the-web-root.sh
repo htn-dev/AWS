@@ -6,3 +6,5 @@ sudo rsync -av /var/www/html /data
 
 # Next, we need to modify Apache server’s configuration file and make it use the new directory.
 # Open and edit the configuration file:
+sudo nano /etc/httpd/conf/httpd.conf 
+
