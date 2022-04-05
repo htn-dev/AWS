@@ -12,7 +12,7 @@ aws ec2 describe-security-groups --query "SecurityGroups[*].[GroupName,GroupId,I
 # This subnet is within the address range of the VPC, but that does not overlap with the address range of any other subnet in the VPC
 aws ec2 create-subnet --vpc-id <CafeInstance VPC ID> --cidr-block 10.200.2.0/23 --availability-zone <CafeInstance Availability Zone>
 
-# Create the CafeDB Private Subnet 2. This is the extra subnet that is required to form the database subnet group. 
+# Create the CafeDB Private Subnet 2. This is the extra subnet that is required to form the database subnet group.
 
 # It is an empty private subnet that is defined in a different Availability Zone than the CafeInstance.
 aws ec2 create-subnet --vpc-id <CafeInstance VPC ID> --cidr-block 10.200.10.0/23 --availability-zone <availability-zone>
