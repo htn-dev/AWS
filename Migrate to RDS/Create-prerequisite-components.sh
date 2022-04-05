@@ -7,7 +7,7 @@ aws ec2 authorize-security-group-ingress --group-id <CafeDatabaseSG Group ID> --
 # confirm that the ingress rule was applied appropriately
 aws ec2 describe-security-groups --query "SecurityGroups[*].[GroupName,GroupId,IpPermissions]" --filters "Name=group-name,Values='CafeDatabaseSG'"
 
-# Create the CafeDB Private Subnet 1. This subnet hosts the Amazon RDS database instance. 
+# Create the CafeDB Private Subnet 1. This subnet hosts the Amazon RDS database instance.
 # It is a private subnet that is defined in the same Availability Zone as the CafeInstance.
 # This subnet is within the address range of the VPC, but that does not overlap with the address range of any other subnet in the VPC
 aws ec2 create-subnet --vpc-id <CafeInstance VPC ID> --cidr-block 10.200.2.0/23 --availability-zone <CafeInstance Availability Zone>
