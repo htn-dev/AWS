@@ -15,6 +15,5 @@ aws ec2 create-subnet --vpc-id <CafeInstance VPC ID> --cidr-block 10.200.2.0/23 
 # Create the CafeDB Private Subnet 2. This is the extra subnet that is required to form the database subnet group.
 # It is an empty private subnet that is defined in a different Availability Zone than the CafeInstance.
 aws ec2 create-subnet --vpc-id <CafeInstance VPC ID> --cidr-block 10.200.10.0/23 --availability-zone <availability-zone>
-
 # Create the CafeDB Subnet Group which consists of the two private subnets that you created in the previous steps, Cafe Private Subnet 1 and Cafe Private Subnet 2.
 aws rds create-db-subnet-group --db-subnet-group-name "CafeDB Subnet Group" --db-subnet-group-description "DB subnet group for Cafe" --subnet-ids <Cafe Private Subnet 1 ID> <Cafe Private Subnet 2 ID> --tags "Key=Name,Value= CafeDatabaseSubnetGroup"
