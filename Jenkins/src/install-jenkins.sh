@@ -13,6 +13,5 @@ sudo rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key
 sudo yum install jenkins -y
 sudo systemctl enable jenkins
 sudo systemctl start jenkins
-
 # nsure jenkins is up and running
 sudo systemctl status jenkins
