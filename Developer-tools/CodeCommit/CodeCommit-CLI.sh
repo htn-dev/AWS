@@ -7,7 +7,7 @@ sudo yum update -y
 # Download .csv file
 # Install Git
 sudo yum install git -y
- 
+
 # new user > Security Credentials > GenerateunderHTTPS Git credentials for AWS CodeCommit > Download credentials
 aws configure
 
