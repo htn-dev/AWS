@@ -1,5 +1,4 @@
 # CREATING UserData.txt FILE
-
 #!/bin/bash
 yum update -y --security
 amazon-linux-extras install epel -y
