@@ -1,6 +1,5 @@
 # Check mariaDB version
 sudo  amazon-linux-extras | grep mariadb
-
 '''     
     DB instance identifier: CafeDBInstance
     Engine option: MariaDB
