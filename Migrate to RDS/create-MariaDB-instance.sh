@@ -13,7 +13,7 @@ sudo  amazon-linux-extras | grep mariadb
     Public accessibility: No
     Username: root
     Password: Re:Start!9
-'''
+''' 
 
 aws rds create-db-instance \
 
