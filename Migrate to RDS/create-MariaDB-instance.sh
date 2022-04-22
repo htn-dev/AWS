@@ -14,6 +14,7 @@ sudo  amazon-linux-extras | grep mariadb
     Username: root
     Password: Re:Start!9
 '''
+
 aws rds create-db-instance \
 
 --db-instance-identifier CafeDBInstance \
