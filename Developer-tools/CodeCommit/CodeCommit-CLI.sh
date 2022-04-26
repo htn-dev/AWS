@@ -1,6 +1,6 @@
 # Create a Server from an Amazon Linux 2 AMI
 sudo yum update -y
-  
+   
 # Create IAM CodeCommit Credentials
 # Create user from IAM
 # Add AWSCodeCommitFullAccess policy to the new user
