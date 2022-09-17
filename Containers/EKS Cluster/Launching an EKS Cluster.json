@@ -3,7 +3,7 @@
 
   "Description" : "Cloudformation template with 1 instance that adds an arecord to Bam Tech",
   
-
+ 
   "Mappings" : {  
 
     "SubnetConfig" : {
